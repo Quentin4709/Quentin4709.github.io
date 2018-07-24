@@ -1,0 +1,35 @@
+[33mcommit 99edb93c4974545b450fcc5b4d214f90a634e754[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Evan Hao <hao.amazing@gmail.com>
+Date:   Mon Jul 23 13:35:43 2018 -0700
+
+    Rename Quentin.html to index.html
+
+[33mcommit 9cfd194344e2fd69a23022257fb61942f48baff7[m
+Author: Evan Hao <hao.amazing@gmail.com>
+Date:   Mon Jul 23 13:34:05 2018 -0700
+
+    Rename index.html to Quentin.html
+
+[33mcommit 05c07961d09de0ca68b1ffeaa772cabb2b162b6f[m
+Author: Evan Hao <hao.amazing@gmail.com>
+Date:   Mon Jul 23 13:32:26 2018 -0700
+
+    Delete README.md
+
+[33mcommit dbaf371ce6268b6a9b9301ee63d61c2a1b8c11c4[m
+Author: Evan Hao <hao.amazing@gmail.com>
+Date:   Mon Jul 23 13:26:55 2018 -0700
+
+    Rename Quentin.html to index.html
+
+[33mcommit 4be3b3fd9446395403104dbb2cb23b0dc966589e[m
+Author: brotatotes <hao.awesome@gmail.com>
+Date:   Mon Jul 23 13:10:15 2018 -0700
+
+    Quentin Website Rough Draft (Contacts is not finished)
+
+[33mcommit 1060c912bca6a8561742d550e9a5ceab35acfdb4[m
+Author: Evan Hao <hao.amazing@gmail.com>
+Date:   Sun Jul 22 20:16:20 2018 -0700
+
+    Initial commit
