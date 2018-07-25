@@ -43,7 +43,6 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-<!--  <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>-->
   <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
   <a href="#discography" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DISCOGRAPHY</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
@@ -59,18 +58,18 @@ body {font-family: "Lato", sans-serif}
   <div class="mySlides w3-display-container w3-center">
     <img src="img/QCoaxumphoto.jpg" style="width:100%">
   </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img/qphotowall.JPG" style="width:100%">
+  </div>
 
 <div style = "background-color:black;width:100%;height:70px;padding-top:2px" class = "w3-container w3-hide-small">
     <!--plays 1cent when you open the website-->
     <div style = "position:relative; left:33%"> <iframe src="1cent.mp3" allow="autoplay" style="height:60px;width:500px;" frameBorder="0"></iframe></div>
 
-    
-<!-- End Page Content -->
      </div>
   <!-- About Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
     <h2 class="w3-wide">Quentin Coaxum</h2>
-<!--    <p class="w3-opacity"><i></i></p>-->
     <p class="w3-justify">Quentin Coaxum showed an affinity for music at a very young age. Upon taking up the trumpet in elementary school, he took a liking to the tapes and records left behind by his grandfather. It was these same recordings that inspired him to take an interest in jazz that would later blossom into a passion for all music. Originally growing up just outside of St. Louis, Missouri, Coaxum currently resides in Chicago, IL, where he is an active musician and educator. Quentin holds a Bachelor of Music Education from Northern Illinois University, and a Masters of Music in Jazz Studies from Northwestern University. Coaxum has since graduated and become one of Chicagoʼs brightest emerging young trumpeters. 
     <br><br>During his time in Chicago, Coaxum has been a featured performer at The Chicago Jazz Festival, The Hyde Park Jazz Festival, and the University of Chicago’s Logan Arts Jazz Series. Coaxum’s first album as a leader, “Current”, was released on the Skiptone Music Label in 2014, and can be purchased on iTunes. 
     <br><br> As a performer, Coaxum has garnered praise for his ability to compose and perform with modern lyricism while also displaying a knowledge of many musical traditions. His voice as a trumpeter reaches across genres in a way that captivates listeners and fellow musicians alike, and has afforded him the opportunity to perform with many world class musicians. As a performer, he has appeared with Solange Knowles, Jimmy Heath, Robin Eubanks, Victor Goines, Benny Golson, Curtis Fuller, Dustin Laurenzi’s “Snaketime”, Jeff Swanson’s “Case-Fitter”, Christopher McBride’s “Quatuor De Force”, Stu Mindeman’s “Waking Eyes”, the Willerm Delisfort Project, and many more. <br><br> Coaxum continues to manage a full teaching schedule while maintaining a busy performance schedule throughout the midwest and abroad.  
@@ -89,24 +88,13 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-black" id="discography">
     <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
       <h2 class="w3-wide w3-center">Discography</h2>
-<!--
-        <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding"><span class="w3-tag w3-green">Coming Soon:</span> Stu Mindeman- Woven Threads (September 2018)</li>
-      </ul>
--->
      <div class="w3-row-padding w3-padding-12" style="margin:0 -16px">
-<!--        <div class="mobileShow">-->
             <div class="w3-center w3-margin-bottom">
                 <a href="https://itunes.apple.com/us/album/current/889950979" target="_blank">
                 <img src="img/Discography Photos/Currrent.jpg" alt="Quentin Coaxum - Current" style="width:50%" class="w3-hover-opacity">
                 </a>
             </div>
         </div>
-<!--
-            <div class = "w3-center w3-margin-bottom w3-col w3-hide-small">
-                <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/current/889950979?app=music" width="660"></iframe>
--->
-<!--            </div>-->
       <div class="w3-row-padding w3-padding-8" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom w3-col s4">
             <a href="https://jeffswansonmusic.bandcamp.com/releases" target="_blank">
@@ -175,7 +163,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
+    setTimeout(carousel, 6000);    
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
