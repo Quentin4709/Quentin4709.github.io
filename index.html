@@ -1,4 +1,5 @@
-<!-- @author Evan Hao -->
+<!--@author Evan Hao-->
+<!--@email: hao.amazing@gmail.com-->
 <!DOCTYPE html>
 <html>
 <title>Quentin</title>
@@ -11,6 +12,16 @@
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
+
+<!--hide the apple music playlist on mobile device-->
+<style type="text/css">
+    .mobileShow {display: none;}
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+    .mobileShow {display: inline;}
+}
+</style>
 <body>
 
 <!-- Navbar -->
@@ -21,12 +32,18 @@ body {font-family: "Lato", sans-serif}
     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
     <a href="#discography" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DISCOGRAPHY</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href= "https://www.instagram.com/quentin.c_/" class = "w3-padding-small" target="_blank" style="float:right">
+        <i class="fa fa-instagram w3-hover-opacity" style="font-size:36px;"></i></a>
+    <a href= "https://www.youtube.com/user/QCMusicalSound" class = "w3-padding-small" target="_blank" style="float:right">
+        <i class="fa fa-youtube-play w3-hover-opacity" style="font-size:36px;"></i></a>
+    <a href= "https://soundcloud.com/qmymelo" class = "w3-padding-small" target="_blank" style="float:right">
+        <i class="fa fa-soundcloud w3-hover-opacity" style="font-size:36px;"></i></a>
   </div>
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="Quentin" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<!--  <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>-->
   <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
   <a href="#discography" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DISCOGRAPHY</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
@@ -42,11 +59,6 @@ body {font-family: "Lato", sans-serif}
   <div class="mySlides w3-display-container w3-center">
     <img src="img/QCoaxumphoto.jpg" style="width:100%">
   </div>
-<!--
-  <div class="mySlides w3-display-container w3-center">
-    <img src="link" style="width:100%">
-  </div>
--->
 
   <!-- About Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
@@ -57,50 +69,58 @@ body {font-family: "Lato", sans-serif}
     <br><br> As a performer, Coaxum has garnered praise for his ability to compose and perform with modern lyricism while also displaying a knowledge of many musical traditions. His voice as a trumpeter reaches across genres in a way that captivates listeners and fellow musicians alike, and has afforded him the opportunity to perform with many world class musicians. As a performer, he has appeared with Solange Knowles, Jimmy Heath, Robin Eubanks, Victor Goines, Benny Golson, Curtis Fuller, Dustin Laurenzi’s “Snaketime”, Jeff Swanson’s “Case-Fitter”, Christopher McBride’s “Quatuor De Force”, Stu Mindeman’s “Waking Eyes”, the Willerm Delisfort Project, and many more. <br><br> Coaxum continues to manage a full teaching schedule while maintaining a busy performance schedule throughout the midwest and abroad.  
 
 </p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-half">
-        <img src="img/q%20hi%20res%202.jpg" class="w3-round w3-margin-bottom" alt="qi hi res 2" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="img/q%20hi%20res%203.jpg" class="w3-round" alt="q hi res 3" style="width:100%">
+    <div class="w3-row-padding w3-padding-8" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom w3-col s6">
+            <img src="img/q hi res 2.jpg" class="w3-round w3-margin-bottom" alt="qi hi res 2" style="width:100%">
+        </div>
+        <div class="w3-half w3-margin-bottom w3-col s6">
+            <img src="img/q hi res 3.jpg" class="w3-round" alt="q hi res 3" style="width:100%">
       </div>
     </div>
   </div>
-
   <!-- Discography -->
   <div class="w3-black" id="discography">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
       <h2 class="w3-wide w3-center">Discography</h2>
+
+<!--
         <ul class="w3-ul w3-border w3-white w3-text-grey">
         <li class="w3-padding"><span class="w3-tag w3-green">Coming Soon:</span> Stu Mindeman- Woven Threads (September 2018)</li>
       </ul>
+-->
+<!--     <div class="w3-row-padding w3-padding-8" style="margin:0 -16px">-->
+        <div class="mobileShow">
+            <div class="w3-center w3-margin-bottom w3-col">
+                <a href="https://itunes.apple.com/us/album/current/889950979" target="_blank">
+                <img src="img/Discography Photos/Currrent.jpg" alt="Quentin Coaxum - Current" style="width:100%" class="w3-hover-opacity">
+                </a>
+            </div>
+        </div>
+            <div class = "w3-center w3-margin-bottom w3-col w3-hide-small">
+                <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/current/889950979?app=music" width="660"></iframe>
+            </div>
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-third w3-margin-bottom w3-col s4">
             <a href="https://jeffswansonmusic.bandcamp.com/releases" target="_blank">
             <img src="img/Discography Photos/Case-fitter.jpg" alt="Case-fitter" style="width:100%" class="w3-hover-opacity">
             </a>
         </div>
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-third w3-margin-bottom w3-col s4">
             <a href="https://lucasgillan.bandcamp.com/album/arroyo" target="_blank">
             <img src="img/Discography Photos/Arroyo.jpg" alt="Arroyo" style="width:100%" class="w3-hover-opacity">
             </a>
         </div>
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-third w3-margin-bottom w3-col s4">
             <a href="https://store.cdbaby.com/cd/marquescarroll2" target="_blank">
             <img src="img/Discography Photos/In Stride We Keep Steppin'.jpg" alt="In Stride We Keep Steppin'" style="width:100%" class="w3-hover-opacity">
             </a>
         </div>
-        <div class="w3-third w3-margin-bottom">
-            <a href="https://itunes.apple.com/us/album/current/889950979" target="_blank">
-            <img src="img/Discography Photos/Currrent.jpg" alt="Quentin Coaxum - Current" style="width:100%" class="w3-hover-opacity">
-            </a>
-        </div>
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-third w3-margin-bottom w3-col s4">
             <a href="https://itunes.apple.com/us/album/in-your-waking-eyes-poems-by-langston-hughes/814493374" target="_blank">
             <img src="img/Discography Photos/In Your Waking Eyes.jpg" alt="In Your Waking Eyes - Poems by Langston Hughes" style="width:100%" class="w3-hover-opacity">
             </a>
         </div>
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-third w3-margin-bottom w3-col s4">
             <a href="https://itunes.apple.com/us/album/quatuor-de-force/569622499" target="_blank">
             <img src="img/Discography Photos/Quatuor De Force.jpg" alt="Quatuor de Force" style="width:100%" class="w3-hover-opacity">
             </a>
@@ -111,7 +131,7 @@ body {font-family: "Lato", sans-serif}
 
   <!-- The Contact Section -->
     <div class="w3-container w3-content w3-padding-64" style="max-width:850px" id="contact">
-        <h2 class="w3-wide w3-center">CONTACT &amp; BOOKING</h2>    
+        <h2 class="w3-wide w3-center">Contact &amp; Booking</h2>
         <div class="w3-row w3-padding-16">
             <div class="w3-col m6 w3-large w3-margin-bottom">
                 <i class="fa fa-envelope" style="width:30px"> </i> quentin.coaxum.music@gmail.com <br>
@@ -133,11 +153,13 @@ body {font-family: "Lato", sans-serif}
 <!-- End Page Content -->
 </div>
 
+<!--
 <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
 <a href= "https://www.instagram.com/quentin.c_/" target="_blank">
     <i class="fa fa-instagram w3-hover-opacity" style="font-size:60px;"></i></a>
 <a href= "https://www.youtube.com/user/QCMusicalSound" target="_blank">
     <i class="fa fa-youtube-square w3-hover-opacity" style="font-size:60px;"></i></a> 
+-->
 
 <script>
 // Automatic Slideshow - change image every 4 seconds
